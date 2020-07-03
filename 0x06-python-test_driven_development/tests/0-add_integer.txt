@@ -1,0 +1,56 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(2,2)
+4
+
+>>> add_integer(100.3, -2)
+98
+
+>>> add_integer(-2, 100.3)
+98
+
+>>> add_integer(4, 'holberton')
+Traceback (most recent call last):
+    	      ...
+TypeError: b must be an integer
+
+>>> add_integer('holberton', 4)
+Traceback (most recent call last):
+              ...
+TypeError: a must be an integer
+
+>>> add_integer("Two", "strings")
+Traceback (most recent call last):
+              ...
+TypeError: a must be an integer
+
+>>> add_integer(True, 2)
+3
+
+>>> add_integer(999999999, 1)
+1000000000
+
+>>> add_integer(None, None)
+Traceback (most recent call last):
+              ...
+TypeError: a must be an integer
+
+>>> add_integer(False, True)
+1
+
+>>> add_integer()
+Traceback (most recent call last):
+	  	  ...
+TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+
+>>> add_integer(2, 4, "string")
+Traceback (most recent call last):
+	  	  ...
+TypeError: add_integer() takes 2 positional arguments but 3 were given

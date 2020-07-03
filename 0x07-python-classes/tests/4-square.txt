@@ -1,0 +1,53 @@
+The `4-square` module
+
+Using ``Square`` class
+
+First import ``Square`` class
+
+Expected Successes:
+===================
+>>> Square = __import__('4-square').Square
+
+# size is large int
+>>> my_square = Square(100000000000000000000000000000000000000000000000000000)
+
+# no size passed
+>>> my_square = Square()
+
+>>> my_square.size = 3
+>>> print(my_square.area())
+9
+
+
+Expected Failures:
+==================
+
+# size is not int
+>>> my_square = Square("size")
+
+# size is negative
+>>> my_square = Square(-17)
+
+>>> my_square.size = -4
+Traceback (most recent call last):
+          ...
+ValueError: size must be >= 0
+
+>>> my_square.size = "string"
+Traceback (most recent call last):
+          ...
+TypeError: size must be an integer
+
+*********** multiple arguments passed *******
+>>> my_square = Square(3, 13)
+Traceback (most recent call last):
+	    ...
+TypeError: __init__() takes at most 2 arguments (3 given)
+
+********** no integer passed *******
+>>> my_square = Square(None)
+
+>>> print(my_square)
+Traceback (most recent call last):
+	    ...
+TypeError: size must be an integer
