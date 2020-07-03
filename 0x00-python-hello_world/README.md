@@ -22,7 +22,7 @@ This project in the low_level_programming series is about:
 
 * What are indexing and slicing in Python
 
-* What is the official Holberton Python coding style and how to check your code with PEP 8
+* What is the official CodeSchoolSF Python coding style and how to check your code with PEP 8
 
 ---
 File|Task
