@@ -16,12 +16,12 @@ Using ``add_integer``
 >>> add_integer(-2, 100.3)
 98
 
->>> add_integer(4, 'holberton')
+>>> add_integer(4, 'CodeSchool')
 Traceback (most recent call last):
     	      ...
 TypeError: b must be an integer
 
->>> add_integer('holberton', 4)
+>>> add_integer('CodeSchool', 4)
 Traceback (most recent call last):
               ...
 TypeError: a must be an integer

@@ -33,7 +33,7 @@ File|Task
 [3-print_number.py ](./3-print_number.py ) | prints the integer stored in a number
 [4-print_float.py ](./4-print_float.py ) | print a float number with a precision of 2 digits
 [5-print_string.py ](./5-print_string.py ) | Prints a string 3 times followed by its first 9 characters
-[6-concat.py ](./6-concat.py ) | Print Welcome to holberton School!
+[6-concat.py ](./6-concat.py ) | Print Welcome to CodeSchool School!
 [7-edges.py ](./7-edges.py ) | copy-cut-paste
 [8-concat_edges.py ](./8-concat_edges.py ) | Print a string
 [9-easter_egg.py ](./9-easter_egg.py ) | print a poem
